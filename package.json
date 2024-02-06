@@ -1,0 +1,37 @@
+{
+  "name": "kamikire-lms",
+  "private": true,
+  "sideEffects": false,
+  "type": "module",
+  "scripts": {
+    "build": "remix build",
+    "dev": "remix dev --manual",
+    "lint": "oxlint",
+    "start": "remix-serve ./build/index.js",
+    "typecheck": "tsc",
+    "postinstall": "husky githooks"
+  },
+  "dependencies": {
+    "@remix-run/css-bundle": ">= 2.6 < 2.10",
+    "@remix-run/node": ">= 2.6 < 2.10",
+    "@remix-run/react": ">= 2.6 < 2.10",
+    "@remix-run/serve": ">= 2.6 < 2.10",
+    "isbot": ">= 4.1 < 4.5",
+    "react": ">= 18.2 < 19",
+    "react-dom": ">= 18.2.0 < 19",
+    "zod": ">= 3.22.4 < 3.26",
+    "zustand": ">= 4.5 < 4.9"
+  },
+  "devDependencies": {
+    "@remix-run/dev": ">= 2.6 < 2.10",
+    "@types/react": ">= 18.2.20 < 19",
+    "@types/react-dom": ">= 18.2.7 < 19",
+    "husky": ">= 9.0.10 < 9.5",
+    "oxlint": ">= 0.2.8 < 1.2",
+    "typescript": ">= 5.1.6 < 5.5"
+  },
+  "engines": {
+    "node": ">= 21.5 < 21.9",
+    "pnpm": ">= 8.13 < 8.17"
+  }
+}
