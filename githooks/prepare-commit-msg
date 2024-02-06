@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cat $1 | grep '# This is a combination' && exit 0
+START_LINE_MSG=$(head -n 1 $1)
+bash githooks/validate_commit_label.sh "$START_LINE_MSG"
