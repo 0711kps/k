@@ -1,0 +1,4 @@
+#!/bin/bash
+
+START_LINE_MSG=$(head -n 1 $1)
+bash githooks/validate_commit_label.sh "$START_LINE_MSG"
